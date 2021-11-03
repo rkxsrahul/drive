@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>XenonStack Hiring Portal | Drive Notification</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body style="width:100%; text-align:center; box-sizing: border-box; margin:20px 0; padding:0 15px; display:block; background-color: #f9f9f9; line-height:1.5; color:#333333; font-size:16px; font-family: 'Open Sans', sans-serif;">
+    <table width="650px" border="0" cellspacing="0" cellpadding="0" style="background-color:#fff; box-shadow: 0 0 1px 1px #eeeeee; display: inline-block; max-width:100%;">
+      <tbody style="display:table; width:100%;">
+        <tr style="display: table-row;">
+          <td style="border-bottom: 1px solid #eeeeee; border-top: 3px solid #0562e8; padding: 15px;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr style="display: table-row;">
+                <td style="text-align:left;"><a href="https://www.xenonstack.com" title="Xenonstack" style="outline: none; text-decoration: none;">
+                    <img src="cid:xenonstack.png" width="180px" style="vertical-align:middle;" alt="XenonStack- A Stack Innovator"></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr style="display: table-row;">
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody style="display:table; width:100%;">
+                <tr style="display: table-row;">
+                  <td style="text-align:center;"><img src="cid:drive.png" alt="XenonStack- A Stack Innovator"></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr style="display: table-row;">
+          <td style="padding: 15px; text-align: left;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+              <tr style="display:table-row;">
+                <td style="padding-right: 5%;">
+                  {{ if .Name }}
+                  <p style="margin: 10px 0; font-size: 17px;">Hi <strong style="color: #0562e8;">{{.Name}},</strong></p>
+                  {{ else }}
+                  <p style="margin: 10px 0; font-size: 17px;">Hi,</strong></p>
+                  {{ end }}
+                  <p style="margin: 10px 0; font-size: 17px;">Your <strong style="color: #0562e8;">{{.DriveName}}</strong> test is scheduled from <strong style="color: #0562e8;">{{.StartTime}}</strong> to <strong style="color: #0562e8;">{{.EndTime}}</strong>.</p>
+                  <p style="margin: 10px 0; font-size: 17px;">You can login/register at <span>{{.Website}}</span> or <a href="{{.Url}}">click here</a> to give test.</p>
+                  <!-- <p style="margin: 10px 0; font-size: 17px;">Your Drive Details are as follows :</p>
+                  <p style="margin: 10px 0; font-size: 17px;"><b>Drive Name:</b> <span>{{.DriveName}}</span></p>
+                  {{ if .College }}
+                  <p style="margin: 10px 0; font-size: 17px;"><b>College Name:</b> <span>{{.College}}</span></p>
+                  {{ else }}
+                  {{ end }}
+                  <p style="margin: 10px 0; font-size: 17px;"><b>Start Time:</b> <span>{{.Time}}</span></p> -->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr style="display:table-row;">
+          <td style="text-align:left; padding:15px;">
+            <p style="margin: 10px 0; font-size: 17px;">Thanks & Regards</p>
+            <p style="margin: 10px 0; font-size: 17px;">Talent Acquisition Team</p>
+          </td>
+        </tr>
+        <tr>
+          <td height="20px"></td>
+        </tr>
+        <tr style="display:table-row;">
+          <td style="background-color:#0562e8; border-bottom:5px solid #01429f; color:#ffffff; padding:15px; text-align:center;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody style="display:table; width:100%;">
+                <tr style="display: table-row;">
+                  <td> <a href="https://www.xenonstack.com/" target="_blank" style="color: #ffffff; outline: none; font-size: 13px; text-decoration: none;"> Copyright &copy; 2018 <strong>XenonStack</strong> <em style="font-style:normal;">All rights
+                        reserved.</em></a> </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
